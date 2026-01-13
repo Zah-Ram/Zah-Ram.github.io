@@ -2,57 +2,260 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Zahid | Research & Portfolio</title>
+  <title>Zahid | Medical AI Researcher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Z.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- HERO -->
   <header class="hero">
+    <div class="hero-bg"></div>
     <div class="hero-content">
-      <img src="images/zahid.jpg" alt="Zahid" class="profile-image">
-      <h1>Zahid</h1>
-      <p>Researcher • Engineer • Lifelong Learner</p>
-      <div class="hero-links">
-        <a href="https://github.com/Zah-Ram">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="mailto:your@email.com">Email</a>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-ring"></div>
+        <img src="images/zahid.jpg" alt="Zahid" class="hero-image">
       </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Zahid</h1>
+        <div class="hero-title">
+          <span class="title-line"></span>
+          <p>Medical AI Researcher</p>
+          <span class="title-line"></span>
+        </div>
+        <p class="hero-tagline">Advancing healthcare through intelligent systems at Chonnam National University</p>
+        <div class="hero-cta">
+          <a href="#research" class="btn btn-primary">View Research</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </header>
 
   <!-- ABOUT -->
-  <section class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a motivated researcher and technologist with a strong interest in
-      innovation, problem-solving, and impactful research. I aim to create
-      meaningful contributions through technology and academic work.
-    </p>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section light">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Degree:</strong> Your Degree – Your University</li>
-      <li><strong>Specialization:</strong> Your Field</li>
-    </ul>
+  <section id="about" class="section section-about">
+    <div class="section-inner">
+      <div class="section-label">
+        <span>01</span>
+        <span class="label-line"></span>
+        <span>About</span>
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">Passionate about <em>bridging</em> AI and healthcare</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I am a PhD candidate specializing in <strong>Medical Artificial Intelligence</strong>, working under the supervision of Professor Kim Jin Young. My research focuses on developing intelligent systems that can assist clinicians in diagnostic decision-making.</p>
+            <p>My work spans <strong>uncertainty quantification</strong>, <strong>contrastive learning</strong>, and <strong>vision-language models</strong> for radiology applications. I'm particularly interested in making AI systems more reliable and interpretable for clinical deployment.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Research</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- RESEARCH -->
-  <section class="section">
-    <h2>Research Papers</h2>
-    <ul>
-      <li>📄 Paper Title One – Conference / Journal</li>
-      <li>📄 Paper Title Two – Conference / Journal</li>
-    </ul>
+  <section id="research" class="section section-research">
+    <div class="section-inner">
+      <div class="section-label">
+        <span>02</span>
+        <span class="label-line"></span>
+        <span>Research</span>
+      </div>
+      <h2 class="section-title">Selected <em>Publications</em></h2>
+      
+      <div class="research-grid">
+        <article class="research-card">
+          <div class="card-accent"></div>
+          <div class="card-content">
+            <span class="card-tag">Published • SCIE</span>
+            <h3>DuCo-Net</h3>
+            <p>Dual Contrastive Learning Networks for medical report retrieval, addressing data scarcity challenges through innovative feature-space techniques.</p>
+            <div class="card-meta">
+              <span class="meta-item">Medical Imaging</span>
+              <span class="meta-item">Contrastive Learning</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="card-accent"></div>
+          <div class="card-content">
+            <span class="card-tag">Under Review</span>
+            <h3>CLFIR</h3>
+            <p>Contrastive Learning with Feature-Space Interpolation for Retrieval-Based Radiology Report Generation.</p>
+            <div class="card-meta">
+              <span class="meta-item">Report Generation</span>
+              <span class="meta-item">Vision-Language</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="card-accent"></div>
+          <div class="card-content">
+            <span class="card-tag">Ongoing</span>
+            <h3>UTA</h3>
+            <p>Uncertainty Trajectory Analysis — a novel method for error detection in medical image classification using auxiliary classifiers.</p>
+            <div class="card-meta">
+              <span class="meta-item">Uncertainty Quantification</span>
+              <span class="meta-item">Error Detection</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    © 2026 Zahid
-  </footer>
+  <!-- EXPERTISE -->
+  <section class="section section-expertise">
+    <div class="section-inner">
+      <div class="section-label">
+        <span>03</span>
+        <span class="label-line"></span>
+        <span>Expertise</span>
+      </div>
+      <h2 class="section-title">Technical <em>Skills</em></h2>
+      
+      <div class="expertise-grid">
+        <div class="expertise-item">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h4>Deep Learning</h4>
+          <p>PyTorch, TensorFlow, transformers, CNNs, attention mechanisms</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/>
+            </svg>
+          </div>
+          <h4>Medical Imaging</h4>
+          <p>Chest X-ray analysis, radiology AI, clinical decision support</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+            </svg>
+          </div>
+          <h4>NLP & Vision-Language</h4>
+          <p>Report generation, BERT, LoRA, multimodal learning</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/>
+            </svg>
+          </div>
+          <h4>Uncertainty Quantification</h4>
+          <p>Calibration, Monte Carlo methods, selective prediction</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- EDUCATION -->
+  <section id="education" class="section section-education">
+    <div class="section-inner">
+      <div class="section-label">
+        <span>04</span>
+        <span class="label-line"></span>
+        <span>Education</span>
+      </div>
+      <h2 class="section-title">Academic <em>Journey</em></h2>
+      
+      <div class="education-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 – 2026 (Expected)</span>
+            <h3>Ph.D. in Medical AI</h3>
+            <p class="timeline-place">Chonnam National University, South Korea</p>
+            <p>Research focus on uncertainty quantification and vision-language models for medical imaging under Prof. Kim Jin Young.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="section-inner">
+      <div class="contact-content">
+        <h2 class="contact-title">Let's <em>Connect</em></h2>
+        <p class="contact-text">Interested in collaboration or discussing research opportunities? I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="https://github.com/Zah-Ram" class="contact-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:your@email.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+            </svg>
+            <span>Email</span>
+          </a>
+          <a href="https://scholar.google.com" class="contact-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+            </svg>
+            <span>Scholar</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2026 Zahid — Crafted with passion</p>
+      <p class="footer-location">Gwangju, South Korea</p>
+    </div>
+  </footer>
 </body>
 </html>
