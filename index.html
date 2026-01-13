@@ -142,6 +142,20 @@ a {
   position: relative;
   padding: 8rem 2rem 4rem;
   overflow: hidden;
+  background: url('images/steve-jobs.png') center center / cover no-repeat;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 11, 0.85);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-bg {
@@ -180,8 +194,8 @@ a {
 }
 
 .hero-image {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--color-surface);
@@ -729,8 +743,8 @@ a {
   }
   
   .hero-image {
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
   }
   
   .hero-cta {
@@ -882,9 +896,9 @@ a {
         <article class="research-card">
           <div class="card-accent"></div>
           <div class="card-content">
-            <span class="card-tag">Published • SCIE</span>
+            <span class="card-tag">Published • IEEE Access</span>
             <h3>DuCo-Net</h3>
-            <p>Dual Contrastive Learning Networks for medical report retrieval, addressing data scarcity challenges through innovative feature-space techniques.</p>
+            <p>Dual-Contrastive Learning Network for Medical Report Retrieval Leveraging Enhanced Encoders and Augmentations.</p>
             <div class="card-meta">
               <span class="meta-item">Medical Imaging</span>
               <span class="meta-item">Contrastive Learning</span>
@@ -895,9 +909,9 @@ a {
         <article class="research-card">
           <div class="card-accent"></div>
           <div class="card-content">
-            <span class="card-tag">Under Review</span>
+            <span class="card-tag">Under Review • Applied Sciences</span>
             <h3>CLFIR</h3>
-            <p>Contrastive Learning with Feature-Space Interpolation for Retrieval-Based Radiology Report Generation.</p>
+            <p>Contrastive Learning with Feature Space Interpolation for Retrieval-Based Chest X-Ray Report Generation.</p>
             <div class="card-meta">
               <span class="meta-item">Report Generation</span>
               <span class="meta-item">Vision-Language</span>
